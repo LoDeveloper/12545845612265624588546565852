@@ -107,9 +107,9 @@ difficultySelect.addEventListener("change", (e) => {
  
   // Set time limit based on difficulty
   if (difficulty === "hard") {
-    time = 2;
-  } else if (difficulty === "medium") {
     time = 5;
+  } else if (difficulty === "medium") {
+    time = 8;
   } else {
     time = 10;
   }
