@@ -13,6 +13,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   min-height: 100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -29,6 +30,10 @@ button {
   background-color: #00a01b;
   color: #ffffff;
   font-weight: bold;
+  transition: 0.3s;
+        &:hover {
+          background-color: #026e12;
+        }
 }
 
 
@@ -74,6 +79,7 @@ button:focus {
 
 .settings.hide {
   transform: translateY(-100%);
+  transition: 0.5s;
 }
 
 
@@ -81,7 +87,7 @@ button:focus {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: 5px;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 
@@ -93,7 +99,8 @@ button:focus {
   color: #ffffff;
   position: relative;
   text-align: center;
-  width: 500px;
+  width: 550px;
+  height: 350px;
 }
 
 
@@ -123,6 +130,7 @@ input {
   width: 300px;
   padding: 12px 20px;
   margin-top: 7px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 
@@ -154,6 +162,12 @@ input {
   width: 100%;
   height: 100%;
   z-index: 1;
+}
+
+footer {
+  color: #b342ff;
+  font-size: 12px;
+  align-content: baseline;
 }
 
 
